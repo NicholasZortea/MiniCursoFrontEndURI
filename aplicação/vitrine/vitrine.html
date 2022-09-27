@@ -1,11 +1,109 @@
 ﻿<!DOCTYPE html>
 
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8" />
-    <title>Vitrine</title>
-</head>
-<body>
 
-</body>
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Vitrine</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../img/logo.svg" alt="Logo da empresa" />
+            <h1>Minha Empresa</h1>
+            <nav>
+                <ul>
+                    <a href="../sobre-nos/sobre-nos.html"> <li>Sobre Nós</li> </a>
+                    <a href="vitrine.html"> <li>Vitrine</li> </a
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section aria-label="Seção produtos">
+                <h1 id="prod1">Produtos</h1>
+
+                <ul>
+                    <li>
+                        <img src="../img/camera.png" alt="Imagem de uma camera" />
+                        <h2>Produto 1</h2>
+                        <p>produto 1 é top demais</p>
+                        <h3>Características</h3>
+                        <table border="solid">
+                            <thead>
+                                <tr>
+                                    <th> Caracteristicas</th>
+                                    <th> Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cor</td>
+                                    <td>Verde e Rosa</td>
+                                </tr>
+                                <tr>
+                                    <td>tamanho</td>
+                                    <td>P,M,G</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="btnProd1" aria-labelledby="prod1">Adicionar ao Orçamento</button>
+                    </li>
+                    <li>
+                        <img src="../img/camera.png" alt="Imagem de uma camera" />
+                        <h2 id="prod2">Produto 2</h2>
+                        <p>produto 2 é lindo demais</p>
+                        <h3>Características</h3>
+                        <table border="solid">
+                            <thead>
+                                <tr>
+                                    <th> Caracteristicas</th>
+                                    <th> Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sexo</td>
+                                    <td>unisex</td>
+                                </tr>
+                                <tr>
+                                    <td>tamanho</td>
+                                    <td>P,M,G</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="btnProd2" aria-labelledby="prod2">Adicionar ao Orçamento</button>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section aria-label="Seção orçamentos">
+                <h1>Peça seu orçamento</h1>
+                <form>
+                <p>
+
+                <label for="inputNome">Nome</label>
+                </p>
+                <input type="text" id="inputNome" />
+                <p>
+                    <label for="textAreaMensagem">Descreva o que deseja orçar</label>
+                </p>
+                <textarea name="textAreaMensagem" id="textAreaMensagem"></textarea>
+                </form>
+                <button>Pedir Orçamento</button>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Minicurso Front End Básico</p>
+        </footer>
+
+    </body>
+
 </html>
