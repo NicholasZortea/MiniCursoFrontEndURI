@@ -1,0 +1,85 @@
+:root {
+    --tam-font-p: 14px;
+    --tam-font-m: 16px;
+    --tam-font-g: 24px;
+    --tam-p: 8px;
+    --tam-m: 16px;
+    --tam-g: 24px;
+    --tam-gg: 32px;
+    --bg-color-header: #009B92;
+    --font-color-header: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    font-size: var(--tam-font-g);
+    font-weight: bold
+}
+
+h2 {
+    font-size: var(--tam-font-m);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--tam-font-p);
+    font-weight: bold;
+}
+
+p, td, th {
+    font-size: var(--tam-font-p);
+}
+
+th {
+    font-weight: bold;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 90px auto 90px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    gap: 0;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--tam-m) var(--tam-gg);
+    background-color: var(--bg-color-header);
+    color: var(--font-color-header);
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+}
+
+.div-logo > h1 {
+    margin-left: var(--tam-m);
+
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    marker: none;
+}

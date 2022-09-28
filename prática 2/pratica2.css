@@ -1,0 +1,55 @@
+﻿:root {
+    --tam-50-px: 50px;
+}
+
+body
+{
+    height: 2000px;
+}
+
+.divExemplo {
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    border: ridge 10px mediumpurple;
+    margin: 5px;
+}
+
+.static {
+    top: var(--tam-50-px);
+    left: var(--tam-50-px);
+    position: static;
+}
+
+.relative {
+    position: relative;
+    top: var(--tam-50-px);
+    left: var(--tam-50-px);
+}
+
+.fixed {
+    top: 100px;
+    left: 500px;
+    position: fixed;
+}
+
+.absolute {
+    top: var(--tam-50-px);
+    left: 100px;
+    position: absolute;
+}
+
+.sticky {
+    top: 10px;
+    left: 10px;
+    position: sticky;
+}
+
+@media (max-width: 600px){
+    .static, .relative, .fixed, .sticky, .absolute, .body, .divExemplo {
+        position: static;
+        background-color: purple
+    }
+}
