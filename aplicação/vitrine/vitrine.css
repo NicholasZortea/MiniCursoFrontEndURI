@@ -1,23 +1,21 @@
 :root {
     --bg-color-orcamento: #FFF;
-
 }
 
 main {
     display: grid;
     grid-template-columns: auto 25%;
-    grid-template-areas: "produtos orcamentos";
+    grid-template-areas: "produtos orcamento";
 }
 
 #section-produtos {
     grid-area: produtos;
 }
 
-#section-orcamentos {
-    grid-area: orcamentos;
+#section-orcamento {
+    grid-area: orcamento;
     background-color: var(--bg-color-orcamento);
     padding: var(--tam-m) var(--tam-gg);
-
 }
 
 form > label {
@@ -29,9 +27,8 @@ form > label {
     width: 100%;
 }
 
-#textAreaMensagem {
+#textaraMensagem {
     width: 100%;
     height: 200px;
     margin-bottom: var(--tam-m);
 }
-

@@ -1,111 +1,101 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vitrine</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="vitrine.css">
+</head>
 
-    <head>
-
-        <meta charset="utf-8" />
-        <title>Vitrine</title>
-        <link href="../style.css" rel="stylesheet" />
-        <link href="vitrine.css" rel="stylesheet" />
-
-    </head>
-
-    <body>
-
-        <header>
-            <div class="div-logo">
-                <img src="../img/logo.svg" alt="Logo da empresa" />
-                <h1>Minha Empresa</h1>
-            </div>
-            
-            <nav>
-                <ul class="lista-sem-estilo">
-                    <a href="../sobre-nos/sobre-nos.html"> <li>Sobre Nós</li> </a>
-                    <a href="vitrine.html" class="selecionado"> <li>Vitrine</li> </a
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section aria-label="Seção produtos" id="section-produtos">
-                <h1 id="prod1">Produtos</h1>
-
-                <ul>
-                    <li>
-                        <img src="../img/camera.png" alt="Imagem de uma camera" />
-                        <h2>Produto 1</h2>
-                        <p>produto 1 é top demais</p>
-                        <h3>Características</h3>
-                        <table border="solid">
-                            <thead>
-                                <tr>
-                                    <th> Caracteristicas</th>
-                                    <th> Descrição</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Cor</td>
-                                    <td>Verde e Rosa</td>
-                                </tr>
-                                <tr>
-                                    <td>tamanho</td>
-                                    <td>P,M,G</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button id="btnProd1" aria-labelledby="prod1">Adicionar ao Orçamento</button>
-                    </li>
-                    <li>
-                        <img src="../img/camera.png" alt="Imagem de uma camera" />
-                        <h2 id="prod2">Produto 2</h2>
-                        <p>produto 2 é lindo demais</p>
-                        <h3>Características</h3>
-                        <table border="solid">
-                            <thead>
-                                <tr>
-                                    <th> Caracteristicas</th>
-                                    <th> Descrição</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>sexo</td>
-                                    <td>unisex</td>
-                                </tr>
-                                <tr>
-                                    <td>tamanho</td>
-                                    <td>P,M,G</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button id="btnProd2" aria-labelledby="prod2">Adicionar ao Orçamento</button>
-                    </li>
-
-                </ul>
-
-            </section>
-
-            <section aria-label="Seção orçamentos" id="section-orcamentos">
-                <h1>Peça seu orçamento</h1>
-                <form>
-
-                    <label for="inputNome">Nome</label>
-                    <input type="text" id="inputNome" />
-                    <label for="textAreaMensagem">Descreva o que deseja orçar</label>
-                    <textarea name="textAreaMensagem" id="textAreaMensagem"></textarea>
-
-                </form>
-                <button class="botao-primario">Pedir Orçamento</button>
-
-            </section>
-        </main>
-
-        <footer>
-            <p>Minicurso Front End Básico</p>
-        </footer>
-
-    </body>
+<body>
+    <header>
+        <div class="div-logo">
+            <img src="../img/logo.svg" alt="Logo da empresa">
+            <h1>Minha empresa</h1>
+        </div>
+        <nav>
+            <ul class="lista-sem-estilo">
+                <a href="../sobre-nos/sobre-nos.html">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="../vitrine/vitrine.html" class="selecionado">
+                    <li>Vitrine</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section-produtos" aria-label="Seção produtos">
+            <h1>Produtos</h1>
+            <ul>
+                <li>
+                    <img src="../img/camera.png" alt="Imagem de uma câmera">
+                    <h2 id="prod1">Calça</h2>
+                    <p>Calça legal</p>
+                    <h3>Características</h3>
+                    <table border="solid">
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cor</td>
+                                <td>Azul e Preta</td>
+                            </tr>
+                            <tr>
+                                <td>Tamanho</td>
+                                <td>44, 46, 48</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="btnProd1" aria-labelledby="btnProd1 prod1">Adicionar ao Orçamento</button>
+                </li>
+                <li>
+                    <img src="../img/camera.png" alt="Imagem de uma câmera">
+                    <h2 id="prod2">Camiseta</h2>
+                    <p>Camiseta legal</p>
+                    <h3>Características</h3>
+                    <table border="solid">
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cor</td>
+                                <td>Verde e Rosa</td>
+                            </tr>
+                            <tr>
+                                <td>Tamanho</td>
+                                <td>P, M, G</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="btnProd2" aria-labelledby="btnProd2 prod2">Adicionar ao Orçamento</button>
+                </li>
+            </ul>
+        </section>
+        <section id="section-orcamento" aria-label="Seção orçamento">
+            <h1>Peça seu orçamento</h1>
+            <form>
+                <label for="inputNome">Nome</label>
+                <input type="text" id="inputNome">
+                <label for="textaraMensagem">Descreva o deseja orçar</label>
+                <textarea name="textaraMensagem" id="textaraMensagem">
+                </textarea>
+            </form>
+            <button class="botao-primario">Pedir Orçamento</button>
+        </section>
+    </main>
+    <footer>
+        <p>Minicurso Front End Básico</p>
+    </footer>
+</body>
 
 </html>

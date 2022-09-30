@@ -7,24 +7,24 @@
     --tam-g: 24px;
     --tam-gg: 32px;
     --bg-color-header: #009B92;
-    --font-color-header: #FFFFFF;
+    --bg-color-main: #EBEBEB;
     --bg-color-footer: #323232;
-    --font-color-footer: #FFF;
-    --bg-color-main: #BBB;
     --bg-color-card: #FFF;
+    --font-color-header: #FFF;
+    --font-color-footer: #FFF;
     --color-botao-primario: #009B92;
-    --color-fonte-botao-primario: #FFF;
+    --font-color-botao-primario: #FFF;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     font-size: var(--tam-font-g);
-    font-weight: bold
+    font-weight: bold;
 }
 
 h2 {
@@ -49,18 +49,19 @@ body {
     display: grid;
     grid-template-rows: 90px auto 90px;
     grid-template-columns: 100%;
-    grid-template-areas:
+    grid-template-areas: 
         "header"
         "main"
-        "footer";
+        "footer"
+    ;
     gap: 0;
 }
 
 header {
     grid-area: header;
+    padding: var(--tam-m) var(--tam-gg);
     display: flex;
     justify-content: space-between;
-    padding: var(--tam-m) var(--tam-gg);
     background-color: var(--bg-color-header);
     color: var(--font-color-header);
 }
@@ -73,6 +74,13 @@ main {
 
 footer {
     grid-area: footer;
+    background-color: var(--bg-color-footer);
+    color: var(--font-color-footer);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: var(--tam-m) var(--tam-gg);
+    font-weight: bold;
 }
 
 .div-logo {
@@ -82,14 +90,12 @@ footer {
 
 .div-logo > h1 {
     margin-left: var(--tam-m);
-
 }
 
 header > nav > ul {
     display: flex;
     align-items: center;
     height: 100%;
-    marker: none;
 }
 
 .lista-sem-estilo {
@@ -102,12 +108,6 @@ header > nav > ul {
     font-size: var(--tam-font-g);
     font-weight: bold;
     margin-left: var(--tam-m);
-    transition: 1s all;
-}
-
-.lista-sem-estilo > a:hover {
-    color: purple;
-
 }
 
 .selecionado {
@@ -115,38 +115,21 @@ header > nav > ul {
     border-color: var(--font-color-header);
 }
 
-footer {
-    grid-area: footer;
-    background-color: var(--bg-color-footer);
-    color: var(--font-color-footer);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: var(--tam-m) var(--tam-gg);
-    font-weight: bold;
-    
-}
-
 .card {
     border-radius: 10px;
     background-color: var(--bg-color-card);
 }
 
-/* Bot„o Prim·rio */
-
+/* In√≠cio Bot√£o Prim√°rio */
 
 .botao-primario {
     border-radius: 15px;
     background-color: var(--color-botao-primario);
-    color: var(--color-fonte-botao-primario);
+    color: var(--font-color-botao-primario);
     font-weight: bold;
-    padding: var(--tam-p) var(--tam-p);
+    padding: var(--tam-p);
     border-color: transparent;
     width: 100%;
 }
 
-
-
-
-
-/* Fim Bot„o Prim·rio */
+/* Fim Bot√£o Primario */
