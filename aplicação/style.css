@@ -8,6 +8,12 @@
     --tam-gg: 32px;
     --bg-color-header: #009B92;
     --font-color-header: #FFFFFF;
+    --bg-color-footer: #323232;
+    --font-color-footer: #FFF;
+    --bg-color-main: #BBB;
+    --bg-color-card: #FFF;
+    --color-botao-primario: #009B92;
+    --color-fonte-botao-primario: #FFF;
 }
 
 * {
@@ -61,6 +67,8 @@ header {
 
 main {
     grid-area: main;
+    min-height: calc(100vh - 180px);
+    background-color: var(--bg-color-main);
 }
 
 footer {
@@ -83,3 +91,62 @@ header > nav > ul {
     height: 100%;
     marker: none;
 }
+
+.lista-sem-estilo {
+    list-style: none;
+}
+
+.lista-sem-estilo > a {
+    text-decoration: none;
+    color: var(--font-color-header);
+    font-size: var(--tam-font-g);
+    font-weight: bold;
+    margin-left: var(--tam-m);
+    transition: 1s all;
+}
+
+.lista-sem-estilo > a:hover {
+    color: purple;
+
+}
+
+.selecionado {
+    border-bottom-style: solid;
+    border-color: var(--font-color-header);
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--bg-color-footer);
+    color: var(--font-color-footer);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: var(--tam-m) var(--tam-gg);
+    font-weight: bold;
+    
+}
+
+.card {
+    border-radius: 10px;
+    background-color: var(--bg-color-card);
+}
+
+/* Botão Primário */
+
+
+.botao-primario {
+    border-radius: 15px;
+    background-color: var(--color-botao-primario);
+    color: var(--color-fonte-botao-primario);
+    font-weight: bold;
+    padding: var(--tam-p) var(--tam-p);
+    border-color: transparent;
+    width: 100%;
+}
+
+
+
+
+
+/* Fim Botão Primário */

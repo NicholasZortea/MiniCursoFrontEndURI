@@ -14,18 +14,21 @@
     <body>
 
         <header>
-            <img src="../img/logo.svg" alt="Logo da empresa" />
-            <h1>Minha Empresa</h1>
+            <div class="div-logo">
+                <img src="../img/logo.svg" alt="Logo da empresa" />
+                <h1>Minha Empresa</h1>
+            </div>
+            
             <nav>
-                <ul>
+                <ul class="lista-sem-estilo">
                     <a href="../sobre-nos/sobre-nos.html"> <li>Sobre Nós</li> </a>
-                    <a href="vitrine.html"> <li>Vitrine</li> </a
+                    <a href="vitrine.html" class="selecionado"> <li>Vitrine</li> </a
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section aria-label="Seção produtos">
+            <section aria-label="Seção produtos" id="section-produtos">
                 <h1 id="prod1">Produtos</h1>
 
                 <ul>
@@ -84,20 +87,17 @@
 
             </section>
 
-            <section aria-label="Seção orçamentos">
+            <section aria-label="Seção orçamentos" id="section-orcamentos">
                 <h1>Peça seu orçamento</h1>
                 <form>
-                <p>
 
-                <label for="inputNome">Nome</label>
-                </p>
-                <input type="text" id="inputNome" />
-                <p>
+                    <label for="inputNome">Nome</label>
+                    <input type="text" id="inputNome" />
                     <label for="textAreaMensagem">Descreva o que deseja orçar</label>
-                </p>
-                <textarea name="textAreaMensagem" id="textAreaMensagem"></textarea>
+                    <textarea name="textAreaMensagem" id="textAreaMensagem"></textarea>
+
                 </form>
-                <button>Pedir Orçamento</button>
+                <button class="botao-primario">Pedir Orçamento</button>
 
             </section>
         </main>
