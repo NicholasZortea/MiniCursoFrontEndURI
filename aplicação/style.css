@@ -13,6 +13,7 @@
     --font-color-header: #FFF;
     --font-color-footer: #FFF;
     --color-botao-primario: #009B92;
+    --color-botao-primario-ativado: blue;
     --font-color-botao-primario: #FFF;
 }
 
@@ -130,6 +131,14 @@ header > nav > ul {
     padding: var(--tam-p);
     border-color: transparent;
     width: 100%;
+}
+
+.botao-primario:hover {
+    border: solid 2px #000000;
+}
+
+.botao-primario:active {
+    background-color: black;
 }
 
 /* Fim Botão Primario */
